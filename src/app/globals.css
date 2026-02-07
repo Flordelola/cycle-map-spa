@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+    /* Torea */
+  --torea-bay-50: #EFF4FE;
+  --torea-bay-100: #E2EAFD;
+  --torea-bay-200: #CAD7FB;
+  --torea-bay-300: #ABBDF6;
+  --torea-bay-400: #8998F0;
+  --torea-bay-500: #6C77E8;
+  --torea-bay-600: #5050DB;
+  --torea-bay-700: #4341C1;
+  --torea-bay-800: #363698;
+  --torea-bay-900: #33347C;
+  --torea-bay-950: #1E1E48;
+
+  /* Grenadier */
+
+  --grenadier-50: #FEF5EE;
+  --grenadier-100: #FDE8D7;
+  --grenadier-200: #FACCAE;
+  --grenadier-300: #F7A97A;
+  --grenadier-400: #F37B44;
+  --grenadier-500: #F0581F;
+  --grenadier-600: #DE3E15;
+  --grenadier-700: #BA2D14;
+  --grenadier-800: #BA2D14;
+  --grenadier-900: #942618;
+  --grenadier-950: #782116;
+
+  /* Base */
+
+  --base-black: #000000;
+  --base-white: #FFFFFF;
+
+  /* Zinc */
+
+  --zinc-50: #FAFAFA;
+  --zinc-100: #F4F4F5;
+  --zinc-200: #E4E4E7;
+  --zinc-300: #D4D4D8;
+  --zinc-400: #A1A1AA;
+  --zinc-500: #71717A;
+  --zinc-600: #52525B;
+  --zinc-700: #3F3F46;
+  --zinc-800: #27272A;
+  --zinc-900: #18181B;
+  --zinc-950: #09090B;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--base-white);
+  --color-foreground: var(--base-black);
+  --font-sans: var(--font-poppins-sans);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--base-white)
+    --foreground: var(--base-black);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--base-white);
+  color: var(--base-black);
+  font-family: "Poppins", sans-serif;
 }
