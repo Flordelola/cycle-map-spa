@@ -1,0 +1,16 @@
+/* Components */
+
+.container {
+  max-width: 1440px;
+  max-height: 820px;
+  height: 100vh;
+}
+.sidebar-networks {
+  max-width: 551px;
+  max-height: 820px;
+  height: 100%;
+  overflow-y: auto;
+}
+.cards  {
+  border-bottom: 1px solid var(--torea-bay-100);
+}
